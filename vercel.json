@@ -1,9 +1,30 @@
+// {
+//   "version": 2,
+//   "routes": [
+//     {
+//       "src": "/api/(.*)",
+//       "dest": "/api/$1",
+//       "headers": {
+//         "Access-Control-Allow-Origin": "*",
+//         "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+//         "Access-Control-Allow-Headers": "Content-Type"
+//       }
+//     }
+//   ]
+// }
+
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "api/sendMail.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1",
+      "src": "/api/sendMail",
+      "dest": "/api/sendMail.js",
       "headers": {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
