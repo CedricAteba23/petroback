@@ -10,7 +10,7 @@ app.use(express.json());
 
 // Remplace par ton Gmail et ton mot de passe d'application
 const GMAIL_USER = "acedricarmel@gmail.com";
-const GMAIL_APP_PASSWORD = "tffn yjvh tynw bxqm";
+const GMAIL_APP_PASSWORD = "fuah zffq bmhh feot";
 
 app.post("/send-mail", async (req, res) => {
   const { name, email, subject, message } = req.body;

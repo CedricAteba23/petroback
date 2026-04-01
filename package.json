@@ -14,4 +14,12 @@
     "express": "^5.2.1",
     "nodemailer": "^8.0.4"
   }
+  // {
+  // "name": "petroback",
+  // "version": "1.0.0",
+  // "type": "module",
+  // "dependencies": {
+  //   "nodemailer": "^6.9.0"
+  // }
+
 }
